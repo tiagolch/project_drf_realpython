@@ -1,10 +1,4 @@
-setup:
-	python3 -m venv venv
-	source venv/bin/activate
-	pip install -r requirements.txt
-	./manage.py makemigrations
-	./manage.py migrate
-	./manage.py runserver
+
 
 freeze:
 	pip freeze > requirements.txt
@@ -12,11 +6,14 @@ freeze:
 runserver:
 	./manage.py runserver 127.0.0.1:8001
 
-venv:
-	source venv/bin/activate
-
 install:
 	pip install -r requirements.txt
+
+makemigrations:
+	./manage.py makemigrations
+
+migrate:
+	./manage.py migrate
 
 test:
 	./manage.py test

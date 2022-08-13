@@ -2,4 +2,9 @@
 
 ## Clone the repository and run:
 
-    make setup
+    python3 -m venv venv
+	source venv/bin/activate
+	make install
+	make makemigrations
+	make migrate
+	make runserver
