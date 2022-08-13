@@ -8,7 +8,7 @@
 
 	make install
 
-	make makemigrations
+	make project
 
 	make migrate
 	

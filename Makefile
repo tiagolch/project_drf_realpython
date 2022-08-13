@@ -9,8 +9,8 @@ runserver:
 install:
 	pip install -r requirements.txt
 
-makemigrations:
-	./manage.py makemigrations
+project:
+	django-admin startproject config .
 
 migrate:
 	./manage.py migrate
